@@ -15,7 +15,7 @@ const port = 3000;
 // Configure nunjucks to work with express
 nunjucks.configure(
     [
-        "views",
+        "src",
         "components"
     ],
     {
@@ -30,7 +30,7 @@ app.use(express.static('public'))
 
 // Renders the index page with a name variable.
 app.get('/', function(req, response) {
-    response.render('index.njk', {Name: "Aebel"}); // express infers the .njk file extension
+    response.render('pages/index.njk', {Name: "Aebel"}); // express infers the .njk file extension
 });
 
 // Starts the server and listens on the specified port.
