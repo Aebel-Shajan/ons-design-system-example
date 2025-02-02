@@ -1,5 +1,5 @@
 {
-  "name": "nunjucks",
+  "name": "js-nunjucks",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
