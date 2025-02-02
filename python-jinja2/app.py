@@ -1,7 +1,8 @@
 from flask import Flask, render_template
+from jinja2 import ChainableUndefined
 
 app = Flask(__name__) 
-
+app.jinja_env.undefined = ChainableUndefined
 
 @app.route("/") 
 def home(): 
