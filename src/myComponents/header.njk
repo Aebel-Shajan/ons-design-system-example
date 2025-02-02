@@ -1,0 +1,36 @@
+{% macro header() %}
+{% from "components/header/_macro.njk" import onsHeader %}
+{{
+    onsHeader({
+        "title": 'Example Page',
+        "mastheadLogoUrl": '#0',
+        "titleUrl": '#0',
+        "variants": 'internal',
+        "navigation": {
+            "id": 'main-nav',
+            "ariaLabel": 'Main menu',
+            "currentPath": "/",
+            "currentPageTitle": 'Design system',
+            "itemsList": [
+                {
+                    "text": 'home',
+                    "url": '/'
+                },
+                {
+                    "text": 'about',
+                    "url": '/about'
+                },
+                {
+                    "text": 'help',
+                    "url": '/help'
+                }
+            ],
+            "toggleNavigationButton": {
+                "text": 'Menu',
+                "ariaLabel": 'Toggle menu'
+            }
+        }
+    })
+}}
+
+{% endmacro %}

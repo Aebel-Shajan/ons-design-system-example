@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ons/design-system": "^72.2.1",
     "express": "^4.21.2",
     "nunjucks": "^3.2.4"
   },

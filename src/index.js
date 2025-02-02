@@ -16,7 +16,7 @@ const port = 3000;
 nunjucks.configure(
     [
         "src",
-        "components"
+        "node_modules/@ons/design-system"
     ],
     {
         autoescape: true,
@@ -26,11 +26,11 @@ nunjucks.configure(
 )
 
 // Use static resources in public folder
-app.use(express.static('public'))
+app.use(express.static('node_modules/@ons/design-system/'))
 
 // Renders the index page with a name variable.
 app.get('/', function(req, response) {
-    response.render('pages/index.njk', {Name: "Aebel"}); // express infers the .njk file extension
+    response.render('pages/index.njk'); // express infers the .njk file extension
 });
 
 // Starts the server and listens on the specified port.
