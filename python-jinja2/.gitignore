@@ -1,2 +1,8 @@
 templates/components/
 templates/layout/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.env
+.env
