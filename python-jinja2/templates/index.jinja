@@ -1,0 +1,12 @@
+{% extends "layout.jinja" %}
+{% from "myComponents/input.jinja" import input%}
+
+{% block content%}
+    <div>
+        This is content inside a block.
+    </div>
+    <div>
+        Enter username: 
+        {{input('username')}}
+    </div>
+{% endblock %}
