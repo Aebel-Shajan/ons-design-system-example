@@ -51,7 +51,7 @@ To set up the project, follow these steps:
     flask run
     ```
 
-6. **Open your browser** and navigate to `http://127.0.0.1:5000` to see the application running.
+6. **Open your browser** and navigate to `http://0.0.0.0:8080` to see the application running.
 
 7. **Make changes** to the code and see them reflected in real-time, thanks to the Flask development server.
 

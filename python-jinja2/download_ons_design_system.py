@@ -25,6 +25,7 @@ def download_and_extract_latest_zip(repo, asset_name, output_folder):
     github_api_url = f"https://api.github.com/repos/{repo}/releases/latest"
     
     response = requests.get(github_api_url)
+    print(response)
     if response.status_code != 200:
         print(f"Error: Unable to fetch latest release details for {repo}")
         return
